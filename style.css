@@ -1,0 +1,149 @@
+
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    padding: 45px;
+    color: whitesmoke;
+    background-image: url(/images/burger.jpeg);
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+
+body{
+    width: 600px;
+    height:1161px;
+    font-family: 'Smythe', cursive;
+    line-height: 45px;
+   
+
+}
+
+.gray{
+    color: darkgray;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+
+}
+
+
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px  20px auto;
+    padding: 0px 0;
+    border-bottom: 2px solid lightgray;
+    height: 170px;
+}
+
+.icon{
+    margin-right: 5%;
+    font-weight: 400;
+    font-size: 78.72px;
+   
+    
+
+
+}
+
+.menu-text{
+ width: 150px;
+    
+    
+}
+
+.add{
+    margin-left: 500%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #5c5c5c;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+
+}
+.total-text{
+    text-align: center; 
+    /* border:1px red solid; */
+    margin-bottom: 20px;
+}
+
+.total-container{
+    height: 320px;
+    width: 560px;
+    margin: 20px  20px;
+    /* border:1px darkred solid; */
+}
+
+.add:hover{
+    background-color: #ededed;
+}
+
+.add:active{
+    background-color: lightgray;
+}
+
+.total-item{
+    display: flex;
+
+    width: 150px;
+
+    
+    /* border: 1px solid blue; */
+}
+
+.total-item-list{
+    display: flex;
+    /* border: 1px solid darkblue; */
+}
+.total-item-container{
+    display: flex;
+    flex-direction: column;
+}
+.total-item-price{
+    margin-left: 66%;
+}
+
+.total-price-container{
+    margin-top: 20px;
+    border-top: 2px solid black;
+    display: flex;
+}
+
+.total-price{
+    margin-left: 78%;
+}
+
+.float-price{
+    padding-left: 50px;
+}
+.remove-btn{
+    border: none;
+    background-color: white;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-right: 280%;
+    color: #BBBB;
+}
+
