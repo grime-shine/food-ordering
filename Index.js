@@ -121,11 +121,5 @@ function handleTotalSectionChange(){
 
 
 function renderTotalPrice(){
+   
 
-    let section 
-//   for (let section of totalSectionArray){
-//    tempPrice = section.price * section.quantity
-//   }
-
-  document.getElementById("total-price").innerHTML = tempPrice
-}
