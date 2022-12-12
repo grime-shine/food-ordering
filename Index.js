@@ -106,8 +106,10 @@ function handleTotalSectionChange(){
             <h2>${section.name}</h2>
             <p id="quantity-${section.id}">${section.quantity}</p>
             <button class="remove-btn" data-remove="${section.id}"type="button">remove</button>
+            <div class ="pricing">
             <h3 class"float-price">${section.price * section.quantity}
-        </div>`
+            </div>
+            </div>`
      }
 
      totalItemEl.innerHTML = tempTotalItem
@@ -121,11 +123,10 @@ function handleTotalSectionChange(){
 
 
 function renderTotalPrice(){
+    let totalCount = 0
    for (let section of totalSectionArray){
-    document.getElementById("total-price").innerText = section.quantity * section.price
+    totalCount += section.quantity * section.price
+
    }
-
-  
+   document.getElementById("total-price").innerText = totalCount
 }
-   
-

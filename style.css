@@ -106,7 +106,7 @@ body{
     width: 150px;
 
     
-    /* border: 1px solid blue; */
+     border: 1px solid blue; 
 }
 
 .total-item-list{
@@ -125,6 +125,7 @@ body{
     margin-top: 20px;
     border-top: 2px solid black;
     display: flex;
+    justify-content: center;
 }
 
 .total-price{
@@ -143,7 +144,12 @@ body{
     font-size: 12px;
     line-height: 24px;
     margin-left: 8px;
-    margin-right: 280%;
+   
     color: #BBBB;
 }
 
+.pricing{
+    border: solid red 1px;
+    margin-left: 200px;
+    max-width: 20px;
+}
