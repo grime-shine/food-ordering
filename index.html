@@ -22,9 +22,22 @@
     <!-- MENU ITEM PLACEHOLDER -->    
 </main>
 
+<div id="modal" class="hidden-modal modal">
+    <h3>Enter your payment info</h3>
+    <div class="modal-container">
+        <form>
+            <input type="text" placeholder="Enter your name">
+            <input class="card-number" type="numeric" placeholder="Enter your card #">
+            <input class="card-number" type="numeric" placeholder="Enter your CVV">
+            <input class="submit" type="submit">
+        </form>
+    </div>
+
+</div>
+
 <div class="total-container" id="total-container">
         <h2 class="total-text">Total:</h2>
-        <div id="totalGenerator" class="totalGenerator">
+       
             <div class="total-item-list">
                 <div id="total-item-container" class="total-item-container">
 
@@ -34,11 +47,13 @@
                     <h3></h3>
                 </div>
             </div>
+      
             <div class="total-price-container">
                 <h2>Total Price:</h2>
                 <h3 id="total-price" class="total-price">$24</h3>
             </div>
-        </div>
+        
+        <button data-checkout="checkout" class="checkout" type="button">Checkout</button>
 </div>
 <footer>
     <script src="index.js" type="module"></script>

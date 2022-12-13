@@ -102,11 +102,8 @@ body{
 
 .total-item{
     display: flex;
-
     width: 150px;
-
-    
-     border: 1px solid blue; 
+    border: 1px solid blue; 
 }
 
 .total-item-list{
@@ -152,4 +149,49 @@ body{
     border: solid red 1px;
     margin-left: 200px;
     max-width: 20px;
+    display: flex;
 }
+
+.checkout{
+    width: 100%;
+    border: none;
+    height: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: black;
+}
+
+.modal{
+    
+    position: absolute;
+    top: 80%;
+    left: 34%;
+
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: #5c5c5c 1px solid;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.hidden-modal{
+    display: none;
+}
+.modal-contaier{
+    
+    
+}
+
+.submit{
+    display: block;
+    margin: auto;
+}
+
+    
+
+    
+
+
+

@@ -38,6 +38,10 @@ document.addEventListener('click', function(e){
     if (e.target.dataset.remove){
         handleRemovingItem(e.target.dataset.remove)
     }
+    if (e.target.dataset.checkout){
+        handleCheckout()
+        console.log("checkout")
+    }
 })
 
 //adding menu items to the order
@@ -106,9 +110,10 @@ function handleTotalSectionChange(){
             <h2>${section.name}</h2>
             <p id="quantity-${section.id}">${section.quantity}</p>
             <button class="remove-btn" data-remove="${section.id}"type="button">remove</button>
+            </div>
             <div class ="pricing">
             <h3 class"float-price">${section.price * section.quantity}
-            </div>
+            
             </div>`
      }
 
@@ -129,4 +134,10 @@ function renderTotalPrice(){
 
    }
    document.getElementById("total-price").innerText = totalCount
+}
+
+function handleCheckout(){
+
+
+    document.getElementById("modal").classList.toggle("hidden-modal")
 }
