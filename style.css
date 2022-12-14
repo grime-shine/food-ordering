@@ -7,7 +7,7 @@
 header {
     padding: 45px;
     color: whitesmoke;
-    background-image: url(/images/burger.jpeg);
+    background-image: url(burger.jpeg);
     background-size: 105%;
     background-repeat: no-repeat;
 }
