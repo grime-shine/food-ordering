@@ -39,7 +39,7 @@ document.addEventListener('click', function(e){
         handleRemovingItem(e.target.dataset.remove)
     }
     if (e.target.dataset.checkout){
-        handleCheckout()
+        handleCheckoutModal()
         console.log("checkout")
     }
 })
@@ -106,15 +106,14 @@ function handleTotalSectionChange(){
      for (let section of totalSectionArray) {
         
         //creating an HTML string for every section/object that is looped through
-        tempTotalItem += `<div id="total-item-${section.id}" class="total-item">
+        tempTotalItem += `<div class="total-item-wrapper"><div id="total-item-${section.id}" class="total-item">
             <h2>${section.name}</h2>
             <p id="quantity-${section.id}">${section.quantity}</p>
             <button class="remove-btn" data-remove="${section.id}"type="button">remove</button>
             </div>
             <div class ="pricing">
             <h3 class"float-price">${section.price * section.quantity}
-            
-            </div>`
+            </div></div>`
      }
 
      totalItemEl.innerHTML = tempTotalItem
@@ -134,10 +133,14 @@ function renderTotalPrice(){
 
    }
    document.getElementById("total-price").innerText = totalCount
+   return totalCount
 }
 
-function handleCheckout(){
+function handleCheckoutModal(){
 
-
+    
+console.log(renderTotalPrice())
+    //toggle modal visibility on
     document.getElementById("modal").classList.toggle("hidden-modal")
+    document.getElementById("modal-total").textContent = renderTotalPrice()
 }
